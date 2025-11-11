@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+        <div class="container-fluid">
+           <a class="navbar-brand text-white fw-bold" href="#">Flipkart</a>
+           <form class="d-flex mx-auto w-50">
+               <input class="form-control me-2" type="search" placeholder="Search for products..." aria-label="Search">
+               <button class="btn btn-light" type="submit">Search</button>
+            </form>
+            <div>
+               <button class="btn btn-light me-2">Login</button>
+               <button class="btn btn-warning" id="cart">Cart (0)</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+       <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="./images/c3.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="./images/c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="./images/c1.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards -->
+    <section class="products">
+      <div class="container">    
+        <h4 class="fw-bold mb-4 fall-animation">Top Deals on Electronics 🔥</h4>
+        <div class="row g-4">
+
+           <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                    <img src="./images/Samsung Galaxy S23.avif " class="card-img-top" alt="Samsung Galaxy S23">
+                    <div class="card-body">
+                        <h6>Samsung Galaxy S23</h6>
+                        <p class="text-success fw-bold">₹79,999</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                    <img src="./images/HP Pavilion 15.avif" class="card-img-top" alt="HP Pavilion 15">
+                    <div class="card-body">
+                        <h6>HP Pavilion 15</h6>
+                        <p class="text-success fw-bold">₹62,499</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                    <img src="./images/Shoes.png" class="card-img-top" alt="Shoes">
+                    <div class="card-body">
+                        <h6>Shoes</h6>
+                        <p class="text-success fw-bold">₹1,299</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                <img src="./images/Noise ColorFit Pro.webp" class="card-img-top" alt="Noise ColorFit Pro">
+                    <div class="card-body">
+                        <h6>Noise ColorFit Pro</h6>
+                        <p class="text-success fw-bold">₹2,499</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                    <img src="./images/t shirt.avif" class="card-img-top" alt="T-shirt">
+                    <div class="card-body">
+                        <h6>Tshirt</h6>
+                        <p class="text-success fw-bold">₹499</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                <img src="./images/watch.webp" class="card-img-top" alt="Watch">
+                    <div class="card-body">
+                        <h6>Watch</h6>
+                        <p class="text-success fw-bold">₹2,999</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                <img src="./images/Earbuds.webp" class="card-img-top" alt="Earbuds">
+                    <div class="card-body">
+                        <h6>Earbuds</h6>
+                        <p class="text-success fw-bold">₹2,499</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card text-center">
+                    <img src="./images/LED TV.webp" class="card-img-top" alt="LED TV">
+                        <div class="card-body">
+                            <h6>LED TV</h6>
+                            <p class="text-success fw-bold">₹62,499</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  <!--Footer -->
+  <footer>
+    © 2025 Flipkart | Designed for Learning | Follow us @FlipKart
+  </footer>
+</body>
+</html>
